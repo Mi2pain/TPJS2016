@@ -9,6 +9,7 @@ function loginCrtFnt($scope, $log){
 	};
 
 	$scope.logAuthObject = function(user) {
-		
+		$log.info('user login', user.login);
+		$log.info('user pwd', user.pwd);
 	};
 }
