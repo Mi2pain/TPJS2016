@@ -34,7 +34,7 @@
 									<input type="password" name="form-password" placeholder="Password..."
 									class="form-password form-control" id="form-password" ng-model="user.pwd">
 								</div>
-								<button type="button" class="btn" ng-click="logAuth()">Lets go!</button>
+								<button type="button" class="btn" ng-click="logAuthObject()">Lets go!</button>
 								<h3>{{user.login}}</h3>
 								<h3>{{user.pwd}}</h3>
 							</form>
@@ -51,5 +51,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 <script src="js/application/LoginApp-s1.2.js"></script>
 <script src="js/controllers/LoginController-s1.2.js"></script>
+<script src="js/services/AuthService-1.2.js"></script>
 </body>
 </html>
