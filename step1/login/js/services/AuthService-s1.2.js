@@ -2,7 +2,7 @@ angular.module('authService', []).service('auth',authFnc);
 
 function authFnc() {
 
-	var userMap = {}; 
+	var userMap = {};
 
 	userMap['jdoe'] = 'jdoepwd';
 	userMap['psmith'] = 'psmithpwd';
@@ -14,8 +14,11 @@ function authFnc() {
 	};
 
 	function checkUser(userlogin,userpwd) {
-
-	};
+		if(userMap[userlogin] == userpwd){
+					return true;
+				}
+		return false;
+		};
 
 	function userList() {
 		return userMap;
