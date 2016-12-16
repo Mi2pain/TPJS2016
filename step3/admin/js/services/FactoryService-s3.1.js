@@ -20,15 +20,37 @@ function factoryFnc() {
         });
         return uuid;
     };
+
     function contentCreation(title, type, src) {
-        // TODO
+        var content = {};
+        content['id'] = generateUUID();
+        content['title'] = title;
+        content['src'] = src;
+        content['type'] = type;
+
+        return content;
     };
+
     function slidCreation(title, txt) {
-        // TODO
+        var slid = {};
+        slid['id'] = generateUUID();
+        slid['title'] = title;
+        slid['txt'] = txt;
+        slid['contentMap'] = {};
+
+        return slid;
     };
+
     function presentationCreation(title, description) {
-        // TODO 
+        var presentation = {};
+        presentation['id'] = generateUUID();
+        presentation['title'] = title;
+        presentation['description'] = description;
+        presentation['slidArray'] = [];
+
+        return presentation; 
     };
+
     function mapToArray(map) {
         contentArray = [];
         for (key in map) {
