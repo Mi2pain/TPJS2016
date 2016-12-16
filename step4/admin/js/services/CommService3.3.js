@@ -10,8 +10,11 @@ function commFnc($http, $q) {
     };
 
     function loadImages(presName, presID) {
-        // var deferred = $q.defer();
+        var deferred = $q.defer();
 
+        setTimeout(function () {
+            resolve();
+        }, 3000);
 		// setInterval(function (presName, presID) {
 		// 	if (userMap[login] == pwd) {
 		// 		userTest['validAuth'] = true;
@@ -26,6 +29,10 @@ function commFnc($http, $q) {
     };
 
     function loadPres(presName, presID) {
+        // TODO
+    };
+
+    function savePres(presName, presID) {
         // TODO
     };
 
